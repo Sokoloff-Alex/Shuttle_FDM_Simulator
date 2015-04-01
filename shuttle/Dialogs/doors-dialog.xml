@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<PropertyList>
+  <name>Space Shuttle Doors</name>
+  <layout>vbox</layout>
+
+  <hrule/>
+
+  <group>
+    <layout>hbox</layout>
+    <halign>center</halign>
+    <valign>top</valign>
+    <stretch>true</stretch>
+
+    <text>
+      <label>Doors</label>
+    </text>
+
+    <group>
+      <stretch>true</stretch>
+      <layout>vbox</layout>
+      <halign>center</halign>
+      <valign>top</valign>
+
+    <checkbox>
+      <label>#1</label>
+      <property>/instrumentation/doors/door1/position-norm</property>
+      <binding>
+       <command>nasal</command>
+       <script>shuttle.doorsystem.door1export();</script>
+      </binding>
+    </checkbox>
+
+    <checkbox>
+      <label>#2</label>
+      <property>/instrumentation/doors/door2/position-norm</property>
+      <binding>
+       <command>nasal</command>
+       <script>shuttle.doorsystem.door2export();</script>
+      </binding>
+    </checkbox>
+
+    <checkbox>
+      <label>#3</label>
+      <property>/instrumentation/doors/door3/position-norm</property>
+      <binding>
+       <command>nasal</command>
+       <script>shuttle.doorsystem.door3export();</script>
+      </binding>
+    </checkbox>
+
+    </group>
+
+
+    <empty><stretch>true</stretch></empty>
+    
+    <vrule/>
+
+    <empty><stretch>true</stretch></empty>
+
+    <group>
+      <layout>vbox</layout>
+      <halign>left</halign>
+      <valign>top</valign>
+      <stretch>true</stretch>
+
+    <checkbox>
+      <label>#4</label>
+      <property>/instrumentation/doors/door4/position-norm</property>
+      <binding>
+       <command>nasal</command>
+       <script>shuttle.doorsystem.door4export();</script>
+      </binding>
+    </checkbox>
+
+    <checkbox>
+      <label>#5</label>
+      <property>/instrumentation/doors/door5/position-norm</property>
+      <binding>
+       <command>nasal</command>
+       <script>shuttle.doorsystem.door5export();</script>
+      </binding>
+    </checkbox>
+
+    <checkbox>
+      <label>#6</label>
+      <property>/instrumentation/doors/door6/position-norm</property>
+      <binding>
+       <command>nasal</command>
+       <script>shuttle.doorsystem.door6export();</script>
+      </binding>
+    </checkbox>
+
+    </group>
+
+  </group>
+
+  <hrule/>
+
+  <group>
+    <layout>hbox</layout>
+    <empty><stretch>true</stretch></empty>
+
+    <button>
+      <legend>Close</legend>
+      <default>true</default>
+      <key>Esc</key>
+      <binding>
+        <command>dialog-close</command>
+      </binding>
+    </button>
+
+    <empty><stretch>true</stretch></empty>
+  </group>
+
+</PropertyList>
