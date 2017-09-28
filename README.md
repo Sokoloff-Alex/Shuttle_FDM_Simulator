@@ -21,8 +21,8 @@ June 2014
 
 In order to visualize the vehicle attitude in FlightGear make the following steps:
 
-1. Put the folder <shuttle> into directory with aircraft model.Default directory is: C:\Program Files\FlightGear\data\Aircraft
-2. launch the runfg.bat file, it will open the FlightGear with support of external dynamics mode.
+1. Move the folder 'shuttle' into directory with aircraft model. Default directory is: C:\Program Files\FlightGear\data\Aircraft
+2. Launch the runfg.bat file, it will open the FlightGear with support of external dynamics mode.
 
 
 In order to run the simulation model in Simulink follow the instruction below:
